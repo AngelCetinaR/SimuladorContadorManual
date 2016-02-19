@@ -5,6 +5,7 @@
 package simuladorcontadormanual;
 
 import contadormanual.ContadorManual;
+import gui.MainForm;
 
 /**
  *
@@ -17,19 +18,20 @@ public class Main {
      */
     public static void main(String[] args) {
         ContadorManual contadorDePasajeros = new ContadorManual();
-        
-        System.out.println("Número de pasajeros: " + contadorDePasajeros.getConteoActual());
-        contadorDePasajeros.contar();
-        System.out.println("Click");
-        contadorDePasajeros.contar();
-        System.out.println("Click");
-        contadorDePasajeros.contar();
-        System.out.println("Click");
-        contadorDePasajeros.contar();
-        System.out.println("Click");
-        System.out.println("Número de pasajeros: " + contadorDePasajeros.getConteoActual());
-        System.out.println("Se reiniciará el conteo de pasajeros...");
-        contadorDePasajeros.reiniciarConteo();
-        System.out.println("Número de pasajeros: " + contadorDePasajeros.getConteoActual());
+        MainForm mf = new MainForm();
+        mf.setVisible(true);
+//        System.out.println("Número de pasajeros: " + contadorDePasajeros.getConteoActual());
+//        contadorDePasajeros.contar();
+//        System.out.println("Click");
+//        contadorDePasajeros.contar();
+//        System.out.println("Click");
+//        contadorDePasajeros.contar();
+//        System.out.println("Click");
+//        contadorDePasajeros.contar();
+//        System.out.println("Click");
+//        System.out.println("Número de pasajeros: " + contadorDePasajeros.getConteoActual());
+//        System.out.println("Se reiniciará el conteo de pasajeros...");
+//        contadorDePasajeros.reiniciarConteo();
+//        System.out.println("Número de pasajeros: " + contadorDePasajeros.getConteoActual());
     }
 }
